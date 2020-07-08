@@ -1,0 +1,132 @@
+.blind {
+    filter: blur(80%);
+    pointer-events: none;
+  }
+
+Link {
+  color: white;
+}
+
+.quiz-row {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+}
+
+.novice-column {
+  position: relative; 
+  height: 100%;
+  width: 33%;
+  text-align: center;
+  border: 5px solid black; 
+  padding: 8%
+}
+
+.navpic {
+  height: 20%;
+  width: 30%
+}
+
+.jumboFront {
+  background: url("https://bit.ly/3gHRUIU") no-repeat fixed bottom;
+  background-size: cover; 
+  object-fit: fill;
+  color: white; 
+}
+
+.quiz-1 {
+  position: relative;
+  display: inline-block;
+}
+
+.quiz-1:before {
+content:"";
+position:absolute;
+width:100%;
+height:100%;
+left:0;
+top:0;
+z-index:-1;
+opacity:0.4;
+background: url("https://bit.ly/2YSvUWJ");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+}
+
+.quiz-2 {
+  position:relative;
+  display:inline-block;
+}
+.quiz-2:before {
+content:"";
+position:absolute;
+width:100%;
+height:100%;
+left:0;
+top:0;
+z-index:-1;
+opacity:0.4;
+background: url("https://bit.ly/2MkIbua");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+}
+
+.quiz-3 {
+  position:relative;
+  display:inline-block;
+}
+.quiz-3:before {
+content:"";
+position:absolute;
+width:100%;
+height:100%;
+left:0;
+top:0;
+z-index:-1;
+opacity:0.4;
+background: url("https://bit.ly/3cpcGcM");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+}
+
+.quiz-4 {
+  position:relative;
+  display:inline-block;
+}
+.quiz-4:before {
+content:"";
+position:absolute;
+width:100%;
+height:100%;
+left:0;
+top:0;
+z-index:-1;
+opacity:0.6;
+background: url("https://bit.ly/36XpJBh");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+}
+
+.quiz-5 {
+  position:relative;
+  display:inline-block;
+}
+.quiz-5:before {
+content:"";
+position:absolute;
+width:100%;
+height:100%;
+left:0;
+top:0;
+z-index:-1;
+opacity:0.6;
+background: url("https://bit.ly/2XllwUN");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+}

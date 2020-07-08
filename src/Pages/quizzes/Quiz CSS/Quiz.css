@@ -1,0 +1,32 @@
+body {
+    background-color: #EFF6F8;
+}
+
+.button {
+    width: 100%;
+    height: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.default-row {
+    width: 80vw; 
+}
+
+.picture-row {
+    width: 50vw; 
+    height: 60vh; 
+    border: 5px solid black;
+}
+
+.quizImage {
+    height: 100%;
+    width: 100%;
+    border: 5px solid black;
+}
+
+.answer-col {
+    height: 30vh;
+}
+

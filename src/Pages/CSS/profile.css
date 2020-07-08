@@ -1,0 +1,27 @@
+.profileRow {
+    height: 50vh;
+  }
+  
+  .profileCol1 {
+    width: 50vw;
+  }
+  
+  .picCol1 {
+    height: 70vh;
+    width: 50vw; 
+  }
+  
+  .profileCol2 {
+    width: 50vw;
+  }
+  
+  .bigRow {
+    height: 70vh;
+    width: 80vw;
+    border: 5px solid black;
+  }
+  
+  .profilePic {
+    height: 100%;
+    width: 100%;
+  }

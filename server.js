@@ -5,13 +5,6 @@ var nodemon = require ('nodemon');
 require('dotenv').config(); 
 var path = require("path"); 
 
-app.use(express.static(path.join(__dirname, 'build')));
-
-
-app.get('/*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'build', 'index.html'));
-});
-
 var bodyParser = require('body-parser');
     app.use(bodyParser.urlencoded({extended: true}));
     app.use(bodyParser.json());
@@ -60,6 +53,13 @@ var userSchema = new Schema ({
 }); 
 
 const User = mongoose.model('User', userSchema);
+
+// serve up production assets
+app.use(express.static('build'));
+// serve up the index.html if express does'nt recognize the route
+app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'build', 'index.html'));
+});
 
 app.get('/api', (req, res, done) => {
     console.log(req.session.sessionID)
@@ -289,9 +289,12 @@ app.post('/login', (req, res, done) => {
             }
             if(result === true) {
                 req.session.sessionID = data[0]._id; 
-                console.log(data); 
-                console.log(req.session.sessionID);   
+                console.log(data);   
                 done(null, req.session.sessionID);
+                console.log(req.session.sessionID); 
+            }
+            else {
+                console.log("this shit wrong yo")
             }
         }) 
         }

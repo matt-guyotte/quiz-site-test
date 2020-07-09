@@ -46,7 +46,6 @@ class login extends React.Component {
           password: this.state.password,
         })
       }) 
-      this.submitFunction2();
     }
 
     submitFunction2() {
@@ -66,7 +65,7 @@ class login extends React.Component {
     }
 
     render() {
-      if(this.state.redirect) {
+      if(this.state.redirect === true) {
         return (
           <div>
             <Redirect to = "/profile"/>
